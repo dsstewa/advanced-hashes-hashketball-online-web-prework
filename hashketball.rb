@@ -170,7 +170,9 @@ end
 def team_colors(team_name)
   game_hash.each do |location, team_data|
     team_data.each do |attribute, data|
+      binding.pry
       if data == team_name
+        binding.pry
         return game_hash[location][:colors]
     end
   end
